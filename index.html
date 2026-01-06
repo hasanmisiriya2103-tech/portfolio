@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hasan Misiriya Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Hasan Misiriya</h1>
+    <p>Web Developer | Portfolio</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Hasan, a passionate web developer learning HTML, CSS, and JavaScript. I love creating interactive and user-friendly web projects.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <ul id="projectList"></ul>
+    <button onclick="addProject()">Add a Project</button>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <ul id="skillList"></ul>
+    <button onclick="addSkill()">Add a Skill</button>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form" onsubmit="submitForm(event)">
+        <label>Name:</label>
+        <input type="text" id="name" required>
+        <label>Email:</label>
+        <input type="email" id="email" required>
+        <label>Message:</label>
+        <textarea id="message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
